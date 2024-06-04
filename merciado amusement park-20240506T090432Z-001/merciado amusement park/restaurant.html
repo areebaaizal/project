@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
+    <link href='https://fonts.googleapis.com/css?family=Chela One' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
+  </head>
+ <style>
+    .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.res{
+  text-align: center;
+   font-size: 100PX;
+    font-family:'Chela One' ;
+    color: white;
+}
+.res:hover{
+  font-size: 110px;
+  transition: ease-in font-size 0.5s;
+}
+.res1{
+  text-align: center;
+   font-size: 70PX;
+    font-family:'Chela One' ;
+    color: white;
+}
+.res1:hover{
+  font-size: 80px;
+  transition: ease-in font-size 0.5s;
+}
+@media screen and (min-width: 601px) {
+  .res {
+       font-size: 80px;
+     }
+   }
+   
+   /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+   @media screen and (max-width: 600px) {
+    .res {
+       font-size: 30px;
+     }
+   }
+   @media screen and (min-width: 601px) {
+  .res:hover {
+       font-size: 90px;
+     }
+   }
+   
+   /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+   @media screen and (max-width: 600px) {
+    .res:hover {
+       font-size: 40px;
+     }
+   }
+ </style>
+ 
+  <body class="bg-danger">
+     <!-- navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid ">
+          <a class="navbar-brand fs-3" href="#"><img src="images/MERCIADO.png" class="img-fluid" alt=""  width="330px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav" >
+          <ul class="navbar-nav fw-bold " >
+            <li class="nav-item ">
+              <a class="nav-link h "   href="index.html" >Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link az  dropdown-toggle" href="attrac.html" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style=" font-family: 'Alatsi';font-size: 21px;">Attractions</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background-color: white; color: #FE7A36;">
+                <li ><a class="dropdown-item" href="rides.HTML" style="color: #FE7A36;">Rides</a></li>
+                <li ><a class="dropdown-item" href="indoorgames.html"  style="color: #FE7A36;">Indoor Games</a></li>
+                <li  ><a class="dropdown-item" href="restaurant.html"  style="color: #FE7A36;">Food and Drinks</a></li>
+                <li ><a class="dropdown-item" href="outdoor.html"  style="color: #FE7A36;">Outdoor Games</a></li>
+                <li ><a class="dropdown-item" href="event.html"  style="color: #FE7A36;">Eventsand Parties</a></li>
+                <li  ><a class="dropdown-item" href="waterpark.html"  style="color: #FE7A36;">Water Park</a></li>
+                
+              </ul>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link e" href="entertainment.html"  >Entertainment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link r" href="restaurant.html" >Restaurants</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link t" href="ticket.html"  >Tickets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link g" href="gallery.html"  >Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link a " href="index.html#ABOUT" >About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link c " href="contact.html" >Contact us</a>
+            </li>
+         
+            <li class="nav-item">
+              <a class="nav-link o " href="login.html" style="color:  #5755FE;" ><button class="login">
+           LOG IN
+                <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+              </button></a>
+            </li>
+          </span> 
+
+          </ul>
+        </div>
+      </div>
+      
+    </nav>
+    <h1 class="res">RESTAURANTS</h1>
+   <div class="container-fluid">
+    <img src="images/rest3.jpg" alt="" height="700px" width="100%">
+  <h3 class="res1">PLACES TO EAT</h3>
+
+</div>
+  
+  
+ 
+  <div class="container">
+    <div class="row">
+      <!-- card1 -->
+      <div class="col-lg-3 col-md-5 col-sm-11 mt-3 ms-5 ">
+        <div class="card" style="width: 18rem; height: 870px;" >
+          <img src="images/Seabreeze_Grill.jpg" class="card-img-top img-fluid" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title" style="font-family:'Chela One' ;color: red;">SEABREEZE GRILL</h5>
+            <p class="card-text">
+              Located in the Midway, the Seabreeze Grill offers a variety of
+              food choices everyone will love. You can dine a la cart or choose
+              a combo meal to satisfy your taste buds. Covered picnic table
+              seating is available.
+            </p>
+            <h1 style="font-family: 'Chela One';color: red;">FOOD</h1>
+            <ul style="list-style-type: disc">
+              <li>Zweigle’s Hot Dogs</li>
+              <li>Hamburgers</li>
+              <li>Cheeseburgers</li>
+              <li>Veggie Burgers</li>
+              <li>Italian Sausage</li>
+              <li>Grilled Chicken</li>
+              <li>Empanadas</li>
+              <li>Nachos & Cheese</li>
+              <li>Large Pretzels</li>
+              <li>Chips</li>
+              <li>Snacks</li>
+              <li>Onion Rings</li>
+            </ul>
+            <h1 style="font-family: 'Chela One';color: red;">DRINK</h1>
+            <ul style="list-style-type: disc">
+              <li>Pepsi Products</li>
+            </ul>
+
+            
+          </div>
+        </div>
+      </div>
+    <!-- div2 -->
+    <div class="col-lg-3 col-md-5 col-sm-11 mt-3 ms-5">
+        <div class="card" style="width: 18rem ; height: 870px;">
+          <img src="images/California_Grill.jpg" class="card-img-top img-fluid" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title" style="font-family: 'Chela One';color: red;">CALIFORNIA GRILL</h5>
+            <p class="card-text">
+              Located in the Water Park, the California Grill is the perfect place to grab a meal after enjoying all the slides! Pick up a cheeseburger or tasty snack, the grill has it all. Right across from the grill, picnic seating is available.
+            </p>
+    <h1 style="font-family: 'Chela One';color: red;">FOOD</h1>
+    <ul style="list-style-type: disc">
+    <li>Zweigle’s Hot Dogs</li>
+    <li>Hamburgers</li>
+    <li>Cheeseburgers</li>
+    <li>Veggie Burgers</li>
+    <li>Italian Sausage</li>
+    <li>Grilled Chicken</li>
+    <li>Nachos & Cheese</li>
+    <li>Large Pretzels</li>
+    <li>Chips & Snacks</li>
+    </ul>
+    <h1  style="font-family: 'Chela One';color: red;">DRINKS</h1>
+    <li>Pepsi Products</li>
+    <li>Slush Puppies</li>
+</ul>
+   </div>
+   </div>
+   </div> 
+<!-- div3 -->
+<div class="col-lg-3 col-md-5 col-sm-11  mt-3  ms-5">
+        <div class="card" style="width: 18rem; height:870px;">
+          <img src="images/Chicken_N_Fries.jpg" class="card-img-top img-fluid" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title"  style="font-family: 'Chela One';color: red;"> CHICKEN ‘N’ FRIES</h5>
+            <p class="card-text">
+              Treat your taste buds with some buffalo chicken wings or tenders! Chicken ‘n’ Fries also offers sweet potato fries! It is located across from the Log Flume. Picnic table seating is available.
+            </p>
+
+ <h1  style="font-family: 'Chela One';color: red;">FOOD</h1>
+    <ul style="list-style-type: disc">
+        <li>French Fries</li>
+        <li>Sweet Potato Fries</li>
+        <li>Boneless Buffalo Wings</li>
+        <li>Chicken Fingers</li>
+<h1  style="font-family: 'Chela One';color: red;">DRINKS</h1>
+<li>Pepsi Products</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<!-- div4 -->
+  
+      <div class="col-lg-3 col-md-5 col-sm-11 mt-3 ms-5">
+        <div class="card" style="width: 18rem ; height: 650px;">
+  <img src="images/Walkaway_Tacos_and_Subs.jpg" class="card-img-top img-fluid" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"  style="font-family: 'Chela One';color: red;">WALKAWAY TACOS & SUBS</h5>
+    <p class="card-text">Salads, subs, tacos & more! Dining here is sure to have something for everyone. Walk-away Tacos & Subs is conveniently located next to the Seabreeze Grill. Covered picnic table seating is available.</p>
+    <h1  style="font-family: 'Chela One';color: red;">FOOD</h1>
+     <ul style="list-style-type: disc">
+    <li>Walk-away Tacos</li>
+    <li>Submarine Sandwiches</li>
+    <li>Fresh Salads</li>
+    <h1  style="font-family: 'Chela One';color: red;">DRINKS</h1>
+    <li>Pepsi Products</li>
+    <li>Slush Puppies</li>
+    </ul>
+  </div>
+</div>
+</div>
+    <!-- div5     -->
+<div class="col-lg-3 col-md-5 col-sm-11 mt-3 ms-5">
+        <div class="card" style="width: 18rem ; height: 650px;">
+  <img src="images/Summertime_Treats.jpg" class="card-img-top img-fluid" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"  style="font-family: 'Chela One';color: red;">SUMMERTIME TREATS</h5>
+    <p class="card-text">Stop at Summertime Treats for just that; summertime treats! Purchase fun novelty ice cream for everyone in the family. The stand is located in the Midway, across from the Kiddie Rides.</p>
+    <h1  style="font-family: 'Chela One';color: red;">FOOD</h1>
+ <ul style="list-style-type: disc">
+<li>Nachos & Cheese</li>
+<li>Hard Ice Cream</li>
+<li>Popcorn</li>
+<li>HOLY COW Cookies</li>
+<h1  style="font-family: 'Chela One';color: red;">DRINKS</h1>
+<li>Pepsi Products</li>
+<li>Slush Puppies</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- div6 -->
+<div class="col-lg-3 col-md-5 col-sm-11 mt-3 ms-5">
+        <div class="card" style="width: 18rem ; height: 650px; ;">
+  <img src="images/Dippin_Dots.jpg" class="card-img-top img-fluid" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"  style="font-family: 'Chela One';color: red;">DIPPIN’ DOTS</h5>
+    <p class="card-text">Everyone loves Dippin’ Dots and there are two locations to get them! One is located across from the Music Express and the other one is at the entrance to the Water Park.</p>
+    <h1  style="font-family: 'Chela One';color: red;">FOOD</h1>
+ <ul style="list-style-type: disc">
+<li>Assorted Dippin’ Dots Flavors</li>
+<li>Floats</li>
+<h1  style="font-family: 'Chela One';color: red;">DRINKS</h1>
+<li>Pepsi Products</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- div7 -->
+
+      <div class="col-lg-3 col-md-5 col-sm-11  mt-3 ms-5">
+        <div class="card" style="width: 18rem ; height: 650px;">
+  <img src="images/Chill_Refill_2.png" class="card-img-top img-fluid" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"  style="font-family: 'Chela One';color: red;">CHILL & REFILL</h5>
+    <p class="card-text">Right across from the Seabreeze Gift Shop, you will find the Chill & Refill stand. Stop by and mix your own Slush Puppies!</p>
+    <h1  style="font-family: 'Chela One'; color: red;">DRINKS</h1>
+     <ul style="list-style-type: disc">
+    <li>Mix Your Own Slush Puppies</li>
+    <li>Pepsi Products</li>
+    <li>Purchase your Souvenir refill bottles here!</li>
+    </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- footer -->
+<footer style="background-color:rgb(0, 74, 173) ; color:white ;">
+  <div class="container mt-5">
+    <div class="row ">
+      <div class="col-lg-3 col-md-6 col-sm-12 mt-5"><img src="images/AMUSE-removebg-preview.png" alt="" height="200px" width="200px"></div>
+      <div class="col-lg-3 col-md-6 col-sm-12 mt-5 mb-5 " style="border-right: solid 2px white;">
+        <h3 class="foot1">contact us</h3>
+        <p >Email:MerciadoAmusementpark@gmail.com</p>
+        <p >Contact:+933456789</p>
+        <p >Address: <li>Seaview</li>
+        <li >DHA Ph IV</li>
+        <li>Hyderabad</li>
+        </p>
+      </div>
+      <div class="col-lg-2 col-md-5 col-sm-11 mt-5 mb-5 ms-4" style="list-style: none; border-right: solid 2px white;">
+      <ul style=" text-decoration:none">  <h3 class="foot1">links</h3></ul>
+        <li class="footp"  ><a  href="index.html" style="color: white; text-decoration: none;" >Home</a></li>
+        <li class="footp" ><a  href="attrac.html" style="color: white;text-decoration: none;" class="footp">Attractions</a></li>
+        <li  class="footp"><a href="restaurant.html" style="color: white;text-decoration: none;" class="footp">Restaurants</a></li>
+        <li  class="footp"><a href="entertainment.html" style="color: white;text-decoration: none;" class="footp">Entertainment</a</li>
+        <li class="footp"><a  href="ticket.html" style="color: white;text-decoration: none;"class="footp" >Tickets</a</li>
+        <li class="footp"><a  href="gallery.html" style="color: white;text-decoration: none;" class="footp">Gallery</a></li>
+        <li class="footp"><a href="index.html#ABOUT" style="color: white;text-decoration: none;" class="footp">About us</a></li>
+      </div>
+      <div class="col-lg-2 col-md-5 col-sm-11 mt-5 mb-5 ms-4" style="list-style: none;">
+        <h3 class="foot1">follow us</h3>
+       <a href="https://www.facebook.com/login/" target="_blank"> <li><i class="fa-brands fa-facebook footp" style="color: #edeff2;"></i></li></a>
+       <a href="https://twitter.com/login" target="_blank"><li><i class="fa-brands fa-twitter footp" style="color: #edeff2;"></i></li></a> 
+       <a href="https://web.whatsapp.com/" target="_blank"> <li><i class="fa-brands fa-whatsapp footp" style="color: #edeff2;"></i></li></a>
+        <a href="https://www.instagram.com/accounts/login/"  target="_blank"><li><i class="fa-brands fa-instagram footp" style="color: #edeff2;"></i></li></a>
+        <a href="sitemap.html"><button style="background-color: white; color:black; font-weight: bold; border-radius: 20px;font-family:'Chela One' ;font-size: 22px; width: 150px;">SITE MAP</button></a>
+      </div>
+    </div>
+  </div>
+
+<p style="background-color: #8a88f1;text-align: center;">&copy;All rights are reserved to Merciado Amusement Park .</p>
+
+</footer>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

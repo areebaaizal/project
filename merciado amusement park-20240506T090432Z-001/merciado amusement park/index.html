@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Chela One' rel='stylesheet'>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+    
+      .view {
+ outline: none;
+ cursor: pointer;
+ border: none;
+ padding: 0.9rem 2rem;
+ margin: 0;
+ font-family: inherit;
+ font-size: inherit;
+ position: relative;
+ display: inline-block;
+ letter-spacing: 0.05rem;
+ font-weight: 700;
+ font-size: 17px;
+ border-radius: 500px;
+ overflow: hidden;
+ background: #0cbebe;
+ color: ghostwhite;
+}
+
+.view span {
+ position: relative;
+ z-index: 10;
+ transition: color 0.4s;
+}
+
+.view:hover span {
+ color: rgb(231, 222, 222);
+}
+
+.view::before,
+.view::after {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ z-index: 0;
+}
+
+.view::before {
+ content: "";
+ background: #34cbcb;
+ width: 120%;
+ left: -10%;
+ transform: skew(30deg);
+ transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+button:hover::before {
+ transform: translate3d(100%, 0, 0);
+}
+.flex-container{
+    display: flex;
+  
+  
+    }
+
+    .flex-container div{
+        background-color:rgb(246, 248, 252);
+        margin: 10px;
+        padding: 10px;
+        font-size: 20px;
+ }
+
+ .flex-container div p{
+    font-size: small;
+    font-weight: lighter;
+    text-align: center;
+}
+
+
+      </style>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid ">
+            <a class="navbar-brand fs-3" href="#"><img src="images/MERCIADO.png" class="img-fluid" alt=""  width="330px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav" >
+            <ul class="navbar-nav fw-bold " >
+              <li class="nav-item ">
+                <a class="nav-link h "   href="index.html" >Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link az  dropdown-toggle" href="attrac.html" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style=" font-family: 'Alatsi';font-size: 21px;">Attractions</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background-color: white; color: #FE7A36;">
+                  <li ><a class="dropdown-item" href="rides.HTML" style="color: #FE7A36;">Rides</a></li>
+                  <li ><a class="dropdown-item" href="indoorgames.html"  style="color: #FE7A36;">Indoor Games</a></li>
+                  <li  ><a class="dropdown-item" href="restaurant.html"  style="color: #FE7A36;">Food and Drinks</a></li>
+                  <li ><a class="dropdown-item" href="outdoor.html"  style="color: #FE7A36;">Outdoor Games</a></li>
+                  <li ><a class="dropdown-item" href="event.html"  style="color: #FE7A36;">Events and Parties</a></li>
+                  <li  ><a class="dropdown-item" href="waterpark.html"  style="color: #FE7A36;">Water Park</a></li>
+                  
+                </ul>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link e" href="entertainment.html"  >Entertainment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link r" href="restaurant.html" >Restaurants</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link t" href="ticket.html"  >Tickets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link g" href="gallery.html"  >Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link a " href="#ABOUT" >About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link c " href="contact.html" >Contact us</a>
+              </li>
+           
+              <li class="nav-item">
+                <a class="nav-link o " href="login.html" style="color:  #5755FE;" ><button class="login">
+             LOG IN
+                  <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                </button></a>
+              </li>
+            </span> 
+
+            </ul>
+          </div>
+        </div>
+        
+      </nav>
+     
+      <section>
+        <!-- carousel 1-->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/carousel1.png" class="d-block w-100 " alt="..." height="700px" width="100%">
+              <div class="carousel-caption d-none d-md-block">
+                <h1 class="carouselh1" >WELCOME TO AMUSEMENT PARK!</h1>
+                <p class="carousel1p">WHERE FUN NEVER ENDS.</p>
+              </div>
+            </div>
+            <!-- CAROUSEL 2 -->
+            <div class="carousel-item">
+              <img src="images/carousel2.avif" class="d-block w-100  carousel slide " alt="..." height="700px" width="100%">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="carouselh2" >EXPLORE THE WORLD</h5>
+               
+              </div>
+            </div>
+            <!-- carousel 3 -->
+            <div class="carousel-item">
+              <img src="images/carousel3.avif" class="d-block w-100 carousel slide " alt="..." height="700px" width="100%">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="carouselh3" >MAKE YOUR MOMENTS MEMORABLE</h5>
+                
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- amusement park -->
+        <div class="container mt-3"><div class="row"><div class="col-lg-12 col-md-12 col-sm-12"><h1 class="amusement responsive-font" >Merciado Amusement park For FUN for all Ages...! </h1></div>
+        <div class="col-lg-12 col-md-12 col-sm-12"> <p class="am1">Unforgettable adventures await at Merciado Amusement park, home to some of the best things to do . With many amazing and thrill rides, shows, attractions, a kids area, and a waterpark, Amusement Park has AMAZING fun for everyone.</p></div>
+          <div class="col-lg-12 col-md-12 col-sm-12"> <p class="am2">Experience fun all season long with our world-class events. Celebrate cultures from across the world during our immersive international celebration, Grand Carnivale. Kids can experience AMAZING fall fun at Tricks and Treats and as the park descends into darkness, fear rises as hundreds of monsters take over the park at Halloween Haunt. Watch the park go from scary to merry as the park transforms into a winter wonderland full of enchantment and holiday cheer with millions of lights, festive shows, and more during WinterFest.</p></div>
+        </div>
+      </div>
+      <!-- amusement park -->
+     
+    
+      <!-- opening hours -->
+    <div class="container">
+      <div class="row "><h1 id="open" >OPENING HOURS</h1>
+      <div class="col-lg-5 col-md-11 col-sm-11 mx-4 ms-5 mb-3 opn1" style="height: 300px; width: 300px; color: white; background-color:rgb(0, 74, 173) ;border-radius: 20px; "><ul style="font-size: 30px; font-weight: bolder;">WORKING DAYS</ul>
+      <li class="time">Monday 12:00pm to 10:00pm </li>
+      <li class="time">Tuseday 12:00pm to 10:00pm </li>
+      <li class="time">Wednesday 12:00pm to 10:00pm </li>
+      <li class="time">Thursday 12:00pm to 10:00pm </li>
+      <li class="time">Friday 12:00pm to 10:00pm </li></div>
+      <div class="col-lg-5 col-md-11 col-sm-11 mx-4 ms-5 mb-3 opn1" style="height: 300px;width: 300px; color: white; background-color:rgb(0, 74, 173) ; border-radius: 20px;"><ul style="font-size: 30px; font-weight: bolder;">WEEKENDS</ul>
+      <li class="time">Saturday 12:00pm to 12:00am</li>
+      <li class="time">Sunday 12:00pm to 12:00am</li></div>
+    </div>
+    </div>
+    <!-- opening hours -->
+    <!-- ATTRACTION -->
+    <div class="container-fluid">
+      <div class="row " style="background-color: #FE7A36;  color: white;text-align: center ;text-shadow: 2PX 2PX black; font-family: 'Chela One';"><h1 class="attr mt-5">THINGS TO BE ATTRACTED</h1>
+        <div class="col-lg-4  col-md-4 col-sm-6 mt-5 " >
+          <a href="rides.HTML"><img class="atrpic" src="images/RIDES.png" alt="" height="300px" width="100%" class="img-fluid"></a></div>
+        <div class="col-lg-4  col-md-4 col-sm-6 mt-5" ><a href="indoorgames.html"><img class="atrpic" src="images/Indoor Games (1).png"  alt=""height="300px" width="100%" class="img-fluid"></a></div>
+        <div class="col-lg-4  col-md-4 col-sm-6 mt-5" ><a href="restaurant.html"><img class="atrpic" src="images/Food and Drinks.png" alt=""height="300px" width="100%" class="img-fluid"></a></div>
+        <div class="col-lg-4  col-md-4 col-sm-6 mt-5" ><a href="outdoor.html"><img class="atrpic" src="images/Outdoor Games.png" alt=""height="300px" width="100%" class="img-fluid"></a></div>
+        <div class="col-lg-4  col-md-4 col-sm-6 mt-5" ><a href="event.html"><img class="atrpic" src="images/Events and Parties.png" alt=""height="300px" width="100%" class="img-fluid"></a></div>
+        <div class="col-lg-4  col-md-4 col-sm-6 mt-5" ><a href="waterpark.html"><img class="atrpic" src="images/blue.png" alt=""height="300px" width="100%"class="img-fluid"></a></div>
+        <a href="attrac.html" style="text-decoration: none;"><button class="submitBtn mx-auto mb-3" style="width: auto; border: 2PX SOLID WHITE;">
+         VIEW MORE ATTRACTIONS
+          <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+        </button></a>
+      </div>
+    </div>
+       <!-- ATTRACTION  -->
+        <!-- Entertainment -->
+      <div  style="background-color:#34cbcb;">
+      <div >
+        
+        <h1 class="enter responsive-font ">ENTERTAINMENT</h1>
+        <h2 class="enter2">THERES MORE FUN FOR ALL!</h2></div>
+   
+        <div  class="zoon" >
+    <div class="row">
+     
+              <div class="col-lg-5  col-md-11 col-sm-11 mt-5 ms-5 mb-5 entercard" class="card" style="width: 18rem; background-color: white;">
+                <img src="images/trillrides.jpg" class=" mt-3 img-fluid" alt="..." width="100%">
+                <div class="card-body">
+                  <h5 class="card-title">Thrill rides</h5>
+                  <p class="card-text">Got a wild side? Experience the ultimate rush with our Thrill Rides. Hold on tight as you soar through twists, turns, and drops that will leave you breathless and wanting more!</p>
+                  <a href="rides.HTML"><button class="view"> <span>View All</span>
+                  </button></a>
+                </div>
+              </div>
+    <!-- card2 -->
+             
+       
+              <div class="col-lg-5  col-md-11 col-sm-11 mt-5 ms-5 mb-5 entercard "class="card" style="width: 18rem;background-color: white;">
+                <img src="images/waterpark.jpg" class="mt-3 img-fluid" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Water Park</h5>
+                  <p class="card-text">Beat the heat at the Soak zone, grab your buddy and race down the Hydro Racer, or enjoy a float on the lazy river! Best place to cool off during the summer and make lasting memories.</p>
+                  <a href="rides.HTML"><button class="view"> <span>View All</span>
+                  </button></a>
+                </div>
+              </div>
+        
+    
+    
+    
+    
+       <!-- card3 -->
+           
+                  <div class="col-lg-5  col-md-11 col-sm-11 mt-5 ms-5 mb-5 entercard "class="card" style="width: 18rem;background-color: white;">
+                    <img src="images/familyrides.jpg" class="mt-3 img-fluid" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Family rides </h5>
+                      <p class="card-text">Family rides offer a unique way for families to bond and create lasting memories. Enjoy merriment on the Carousel, Teacups,merry go-round,ferris wheel and more!</p>
+                      <a href="rides.HTML"><button class="view"> <span>View All</span>
+                      </button></a>
+                    </div>
+                  </div>
+        <!-- card4 -->
+               
+                  <div class="col-lg-5  col-md-11 col-sm-11 mt-5 ms-5 mb-5 entercard" class="card"  style="width: 18rem;background-color: white;">
+                    <img src="images/riddierides.jpg" class="mt-3 img-fluid" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">kiddie Rides</h5>
+                      <p class="card-text">From a junior coaster to Kiddie City, we have rides for the little ones! Spend the day floating in the air, taking a classic car out for a spin, or strapped into the swings!</p>
+                      <a href="rides.HTML"><button class="view"> <span>View All</span>
+                      </button></a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+           
+       </div> 
+    
+    <!-- about us -->
+  
+<div id="ABOUT" style="background-color: #FA7070;">
+
+    <div class="container" style="background-color: #FA7070;">
+      <center><h1 class="abouth1 ">ABOUT US</h1></center>
+    <div class="row">
+     
+        
+       
+        <div class="col-lg-6 col-md-6 col-sm-12" style="background-color: #FA7070;">
+            
+          Merciado Amusement park is a nationwide brand, which comes under the umbrella of Pioneer Amusement Services (Pvt.) Ltd that is a subsidiary of the “Dolmen Group”. We come with a vision to develop International Standard Amusement landscapes in Pakistan.
+            
+             
+            
+            Over the years,Merciado Amusement park  has expanded its operations within the major metropolitan cities of Pakistan including Karachi & Hyderabad and we intend to continue the growth at the same pace in the near future. </div>
+       
+            <div class="col-lg-6 col-md-6 col-sm-12" style="background-color: #FA7070;">The Merciado Amusement park arcade has been built both indoors and outdoors to provide an environment of equal thrill for fun seekers. The arcade has a wide range of rides including a Drop Tower, Dodgem Cars, a 7-D Cinema, plus many other exciting rides.
+
+ 
+
+              Merciado Amusement park is the perfect place for a fun day out! There are plenty of rides to keep everyone entertained, from the fast and thrilling to the gentle and nostalgic. There’s also a great selection of food and drink outlets, so you can refuel after a busy day of exploring the park. And if you’re looking for something extra special, Chunky Monkey Park regularly hosts events and parties – perfect for birthday celebrations or simply a fun night out! So whether you’re young or young at heart, there’s something for everyone at DREAM WEAVER AMUSEMENT PARK. </div>
+    </div>
+    
+
+<div class="row" style="background-color: #FA7070;">
+    
+    <div class="col-lg-6 col-md-6 col-sm-12"  style="background-color: #FA7070;">
+        <img src="images/MERCIADO.png" class="img-fluid" alt="" width="8100%" height="500px">
+    </div>
+   
+    <div class="col-lg-6 col-md-6 col-sm-12"  style="background-color: #FA7070;">
+       <center><h1 class="abouth1" style="background-color: #FA7070;  font-family: 'Chela One'; text-shadow: 2px 2px black;color: white;">PARK RULES $ REGULATIONS</h1></center> 
+       <ul>
+<li> No weapons allowed</li>
+<li> No entry without family</li>
+<li> Please cooperate with our staff</li>
+<li> Smoking is not allowed</li>
+<li> You are responsible for your personal belongings</li>
+<li> Pets not allowed</li>
+<li> Food from outside is not allowed</li>
+<li> All rights reserved</li>
+</ul>
+    </div>
+    
+    </div>
+
+
+<div class="row" style="background-color: #FA7070;">
+   <div class="col-lg-6 col-md-6 col-sm-12" style="background-color: #FA7070;">
+    <center><h1 class="abouth1" style="background-color: #FA7070; font-family: 'Chela One'; text-shadow: 2px 2px black; color: white;">OUR VISION</h1></center> 
+    Merciado Amusement park offers recreational facilities to guests of all ages in a friendly, safe and service-orientated environment. Our sole purpose is to establish a safe and well-managed amusement park. 
+
+ 
+
+We want to meet and exceed all consumer demands, strive for excellence in quality, integrity, and value in all that we do. We are focused towards creating an atmosphere of fun and excitement for the entire family whilst adhering to the environmental goals and obligations as well.
+   </div>
+   <div class="col-lg-6 col-md-6 col-sm-12" style="background-color: #FA7070;">
+    <center><h1 class="abouth1" style="background-color: #FA7070; font-family: 'Chela One'; text-shadow: 2px 2px black; color: white;">Corporate Events</h1></center>
+    At Merciado Amusement park Events, we specialize in making you cooperate events and birthday parties to remember forever. We have a wide range of rides for all ages group and comfortable space to accommodate over 1200 peoples.
+
+ 
+
+Plus, our experienced team will work on your custom-tailor your event to meet your specific needs. So whether you’re looking for an over-the-top celebration or a more subdued affair, we can help make it happen. Contact us, today to learn more about what we can do for you. We look forward to helping you create an event that’s truly unforgettable. 
+
+
+   </div>
+   
+  
+</div>
+
+<center><h1 class="abouth1" style="background-color: #FA7070;  font-family: 'Chela One';color: white;text-shadow: 2px 2px black;">PARK INFORMATION</h1></center>
+<div class="row" style="background-color: #FA7070;">
+    <div class="col-lg-6 col-md-6 col-sm-12" style="background-color: #FA7070;">
+        <center><h2 class="abouth2" style=" font-family: 'Chela One'; text-shadow: 2px 2px black; color: white;">Merciado Amusement park– Seaview</h2></center>
+        Established: December 20, 2015
+
+ Area: 65,000 Sq. ft.
+
+ Rides: 56 + Includes indoor and outdoor, 7D
+
+cinema, Bumper Cars, Redemption Games, Arcade Games, Water Games and Kiddie
+
+Rides
+
+Location: D.H.A. Clifton, Karachi, Pakistan
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12" style="background-color: #FA7070;">
+        <center><h2 class="abouth2" style=" font-family: 'Chela One'; text-shadow: 2px 2px black; color: white;">Merciado Amusement park– DHA Ph IV</h2></center>
+        Established: 1996
+
+Area: 3.3 acres.
+
+Rides: 30+ Includes 7D Cinema, Fun City and indoor Amusement Games
+
+Location: Plot P-1, Phase IV, D.H.A Adjacent
+
+Nisar Shaheed Park, Karachi, Pakistan.
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12" style="background-color: #FA7070;">
+        <center><h2 class="abouth2" style="font-family: 'Chela One'; text-shadow: 2px 2px black; color: white;">Merciado Amusement park–Hyderabad</h2></center>
+        Established: 2007 
+
+ Area: 4400 Sq. Ft.
+
+Rides: 54 Kiddies (Indoor)
+
+Location: Panacasatta Bakery Salah Uddin Road, Hyderabad, Pakistan.
+    </div>
+</div>
+
+    </div>
+  </div>
+      
+    <!-- facilities -->
+          
+    <div id="facil" class="container-fluid" style="background-image: linear-gradient(to right,rgb(51, 51, 181),rgb(233, 128, 145)); color:white">
+      <div class="row">
+        <h1 class="fac mt-5" style="text-align: center;font-family: 'Chela One';" >FACILITIES</h1>
+        <div class="col-lg-4 mt-5 facdiv"style="text-align: center;"><i class="fa-solid fa-car fa-2xl iconfac" ></i>
+        <h3 class="mt-3 fac2">DEDICATED PARKING</h3>
+      <p>Separate dedicated parking space available for visitor/customers.
+
+      </p></div>
+        <div class="col-lg-4 mt-5 facdiv"style="text-align: center;">
+          <i class="fa-solid fa-thumbs-up fa-2xl iconfac"></i>
+          <h3 class="mt-3 fac2">LOST & FOUND</h3>
+          <p>Please take care of your belongings
+
+            but if you forget something. don’t
+           
+            worry contact our lost & found 
+           
+           counter.</p>
+        </div>
+        <div class="col-lg-4 mt-5 facdiv" style="text-align: center;"><i class="fa-solid fa-suitcase-medical fa-2xl iconfac"></i>
+        <h3 class="mt-3 fac2">FIRST AID</h3>
+      <p>We understand we have exciting rides
+
+        & kids grow when they got hurt, but 
+       
+       our first aid kit is there for you.</p></div>
+        <div class="col-lg-4 mt-5 mb-5 facdiv" style="text-align: center;"><i class="fa-solid fa-lock fa-2xl iconfac"></i>
+        <h3 class="mt-3 fac2">SECURITY</h3>
+      <p>You & your family can 
+
+        enjoy the rides, we will
+        
+         take care of your security
+        
+         with our security teams &
+        
+         protocols.</p></div>
+        <div class="col-lg-4 mt-5 mb-5 facdiv" style="text-align: center;"><i class="fa-solid fa-toilet-paper fa-2xl iconfac"></i>
+        <h3 class="mt-3 fac2">TOILETS</h3>
+      <p>Separate & clean, 
+
+        hygenic todets (Male &
+        
+         Female separate) for our 
+        
+        customers.</p></div>
+        <div class="col-lg-4 mt-5 mb-5 facdiv" style="text-align: center;"><i class="fa-solid fa-person-praying fa-2xl iconfac"></i>
+        <h3 class="mt-3 fac2">PRAYER ROOM</h3>
+      <p>Separate & clean, Prayer 
+
+        room Masjid for (Male & 
+        
+        Female separate).</p></div>
+        
+      </div>
+    </div>
+    <!-- footer -->
+<footer style="background-color:rgb(0, 74, 173) ; color:white ;">
+  <div class="container ">
+    <div class="row ">
+      <div class="col-lg-3 col-md-6 col-sm-12 mt-5"><img src="images/AMUSE-removebg-preview.png" alt="" height="200px" width="200px"></div>
+      <div class="col-lg-3 col-md-6 col-sm-12 mt-5 mb-5 " style="border-right: solid 2px white;">
+        <h3 class="foot1">contact us</h3>
+        <p >Email:MerciadoAmusementpark@gmail.com</p>
+        <p >Contact:+933456789</p>
+        <p >Address: <li>Seaview</li>
+        <li >DHA Ph IV</li>
+        <li>Hyderabad</li>
+        </p>
+      </div>
+      <div class="col-lg-2 col-md-5 col-sm-11 mt-5 mb-5 ms-4" style="list-style: none; border-right: solid 2px white;">
+      <ul style=" text-decoration:none">  <h3 class="foot1">links</h3></ul>
+        <li class="footp"  ><a  href="index.html" style="color: white; text-decoration: none;" >Home</a></li>
+        <li class="footp" ><a  href="attrac.html" style="color: white;text-decoration: none;" class="footp">Attractions</a></li>
+        <li  class="footp"><a href="restaurant.html" style="color: white;text-decoration: none;" class="footp">Restaurants</a></li>
+        <li  class="footp"><a href="entertainment.html" style="color: white;text-decoration: none;" class="footp">Entertainment</a</li>
+        <li class="footp"><a  href="ticket.html" style="color: white;text-decoration: none;"class="footp" >Tickets</a</li>
+        <li class="footp"><a  href="gallery.html" style="color: white;text-decoration: none;" class="footp">Gallery</a></li>
+        <li class="footp"><a href="#ABOUT" style="color: white;text-decoration: none;" class="footp">About us</a></li>
+      </div>
+      <div class="col-lg-2 col-md-5 col-sm-11 mt-5 mb-5 ms-4" style="list-style: none;">
+        <h3 class="foot1">follow us</h3>
+       <a href="https://www.facebook.com/login/" target="_blank"> <li><i class="fa-brands fa-facebook footp" style="color: #edeff2;"></i></li></a>
+       <a href="https://twitter.com/login" target="_blank"><li><i class="fa-brands fa-twitter footp" style="color: #edeff2;"></i></li></a> 
+       <a href="https://web.whatsapp.com/" target="_blank"> <li><i class="fa-brands fa-whatsapp footp" style="color: #edeff2;"></i></li></a>
+        <a href="https://www.instagram.com/accounts/login/"  target="_blank"><li><i class="fa-brands fa-instagram footp" style="color: #edeff2;"></i></li></a>
+        <a href="sitemap.html"><button style="background-color: white; color:black; font-weight: bold; border-radius: 20px;font-family:'Chela One' ;font-size: 22px; width: 150px;">SITE MAP</button></a>
+      </div>
+    </div>
+  </div>
+
+<p style="background-color: #8a88f1;text-align: center;">&copy;All rights are reserved to Merciado Amusement Park .</p>
+
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

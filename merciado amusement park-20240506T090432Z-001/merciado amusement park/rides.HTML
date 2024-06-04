@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://fonts.googleapis.com/css?family=Chela One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+   
+   
+.btn-primary:hover{
+  background-color: rgb(32, 32, 172);
+}
+
+.btn-primary:hover .arrow {
+  animation: slide-in-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.viewallBtn:active {
+  transform: scale(0.97);
+}   
+  .rh{
+    background-color: white;
+     color:rgb(60, 165, 206);
+      text-align: center;
+      font-family: 'Chela One';
+      font-size: 40px;
+  }  
+  .rh:hover{
+font-size: 50px;
+transition: ease-in font-size 0.5s;
+  }    
+  .r2{
+    color: white; text-align: center; margin-top: 20px; font-weight: bolder;
+    font-size:90px ;
+    font-family: 'Chela One';
+  }
+  .r2:hover{
+    font-size: 100px;
+    transition: ease-in font-size 0.5s;
+  }
+  </style>
+</head>
+<body style="background-color: rgb(60, 165, 206);">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid ">
+        <a class="navbar-brand fs-3" href="#"><img src="images/MERCIADO.png" class="img-fluid" alt=""  width="330px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav" >
+        <ul class="navbar-nav fw-bold " >
+          <li class="nav-item ">
+            <a class="nav-link h "   href="index.html" >Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link az  dropdown-toggle" href="attrac.html" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style=" font-family: 'Alatsi';font-size: 21px;">Attractions</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background-color: white; color: #FE7A36;">
+              <li ><a class="dropdown-item" href="rides.HTML" style="color: #FE7A36;">Rides</a></li>
+              <li ><a class="dropdown-item" href="indoorgames.html"  style="color: #FE7A36;">Indoor Games</a></li>
+              <li  ><a class="dropdown-item" href="restaurant.html"  style="color: #FE7A36;">Food and Drinks</a></li>
+              <li ><a class="dropdown-item" href="outdoor.html"  style="color: #FE7A36;">Outdoor Games</a></li>
+              <li ><a class="dropdown-item" href="event.html"  style="color: #FE7A36;">Eventsand Parties</a></li>
+              <li  ><a class="dropdown-item" href="waterpark.html"  style="color: #FE7A36;">Water Park</a></li>
+              
+            </ul>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link e" href="entertainment.html"  >Entertainment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link r" href="restaurant.html" >Restaurants</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link t" href="ticket.html"  >Tickets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link g" href="gallery.html"  >Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link a " href="index.html#ABOUT" >About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link c " href="contact.html" >Contact us</a>
+          </li>
+       
+          <li class="nav-item">
+            <a class="nav-link o " href="login.html" style="color:  #5755FE;" ><button class="login">
+         LOG IN
+              <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+            </button></a>
+          </li>
+        </span> 
+
+        </ul>
+      </div>
+    </div>
+    
+  </nav>
+ 
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="image/sliderss.jpg" class="d-block w-100" alt="...">
+            
+          </div>
+         </div>
+      </div>
+       
+      <div ><h1  class="r2">RIDES</h1></div>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+          
+              <h1 id="thrill" class="rh">THRILL RIDES</h1>
+            
+              <!-- card1 -->
+                 <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                   <div class="card" style="width: 18rem; height: 450px;">
+                    <img src="image/Jack_Rabbit_04.jpg" class="card-img-top img-fluid" alt="..." class="item thrill">
+                    <div class="card-body">
+                        <h5 class="card-title">THRILL RIDES</h5>
+                      <h5 class="card-title">JACK RABBIT</h5>
+                      <p class="card-text">A staple of Seabreeze and a staple in our hearts. Built in 1920, the Rabbit is the oldest continuously operating roller coaster in America!</p>
+                     <a href="JACK RABBIT.html" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                    </div>
+                  </div>
+                </div>
+                
+       <!-- card 2 -->
+                 <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                    <div class="card"  style="width: 18rem;height: 450px;">
+                       <img src="image/Whirlwind_01.jpg" class="card-img-top" alt="..." class="item thrill">
+                       <div class="card-body">
+                         <h5 class="card-title">THRILL RIDES</h5> 
+                         <h5 class="card-title">WHIRLWIND</h5>
+                         <p class="card-text">Enjoy the fun and adventure of a wild ride with unexpected twists and turns. You'll go forwards, backwards, sideways and down - which way are we going?</p>
+                          <a href="WHIRLWIND.html" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                        </div>
+                       </div>
+                  </div>
+<!-- card 3 -->
+                  <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                  <div class="card" style="width: 18rem;height: 450px;">
+                    <img src="image/Music_Express_08.jpg" class="card-img-top" alt="..." class="item thrill">
+                    <div class="card-body">
+                        <h5 class="card-title">THRILL RIDES</h5>
+                      <h5 class="card-title">MUSIC EXPRESS</h5>
+                      <p class="card-text">All aboard the Music Express! Enjoy the super-fast ride as you round and round. Crank the tunes - you'll feel like you're at a party every time you ride.</p>
+                      <a href="MUSIC EXPRESS.html" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                    </div>
+                  </div>
+                  </div>
+                
+          <!-- card 4 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5 ">
+                        <div class="card" style="width: 18rem; height: 450px;">
+                            <img src="image/Revolution_360_04.jpg" class="card-img-top" alt="..." class="item thrill">
+                            <div class="card-body">
+                                <h5 class="card-title">THRILL RIDES</h5>
+                              <h5 class="card-title">REVOLUTION 360</h5>
+                              <p class="card-text">Revolution 360 takes you on an unforgettable ride. Let yourself be propelled to new heights as you glide back and forth on the platform, spinning through the air.</p>
+                              <a href="REVOLUTION 360.html" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                            </div>
+                          </div>
+                    </div>
+<!-- card 5 -->
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5 ">
+                        <div class="card" style="width: 18rem; height: 450px;">
+                            <img src="image/Screamin_Eagle_05.jpg" class="card-img-top" alt="..." class="item thrill">
+                            <div class="card-body">
+                                <h5 class="card-title">THRILL RIDES</h5>
+                              <h5 class="card-title">SCREAMIN’ EAGLE</h5>
+                              <p class="card-text">Get ready for an upside-down adrenaline rush like no other. The one-of-a-kind ride will have you screaming with joy at 70 feet in the air!</p>
+                              <a href="SCREAMIN’ EAGLE.html" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                            </div>
+                          </div>
+                    </div>
+
+<!-- card 6 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                        <div class="card" style="width: 18rem; height: 450px;">
+                            <img src="image/Time_Machine_03.jpg" class="card-img-top" alt="..." class="item thrill">
+                            <div class="card-body">
+                                <h5 class="card-title">THRILL RIDES</h5>
+                              <h5 class="card-title">TIME MACHINE</h5>
+                              <p class="card-text">Step into the Time Machine, a towering ride that will take you full circle and lift you three stories into the air! Hang on tight and witness the park at new heights!</p>
+                              <a href="TIME MACHINE.html" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                            </div>
+                          </div>
+                    </div>
+                <!-- card 7 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+        <div class="card" style="width: 18rem; height: 450px;">
+          <img src="image/Wave_Swinger_01.jpg" class="card-img-top" alt="..." class="item thrill">
+          <div class="card-body">
+            <h5 class="card-title">THRILL RIDES</h5>
+            <h5 class="card-title">WAVE SWINGER</h5>
+            <p class="card-text">Pick your seat and get ready to feel magic in the air. Take off on an unforgettable journey as you're flying in circles 30 feet in the air!</p>
+            <a href="WAVE SWINGER.HTML" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+          </div>
+        </div>
+        </div>
+
+<!-- card 8 -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+          <div class="card" style="width: 18rem; height: 450px;">
+            <img src="image/Windstarz_CW_2.jpg" class="card-img-top" alt="..."class="item family">
+            <div class="card-body">
+              <h5 class="card-title">FAMILY RIDES</h5>
+              <h5 class="card-title">WINDSTARZ</h5>
+              <p class="card-text">Be the pilot of your own hang glider. Sail up and down, back and forth - flying with the breeze!</p>
+              <a href="WINDSTARZ.HTML" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+            </div>
+          </div>
+          </div>
+          <h1 id="family" class="rh mt-5 ">FAMILY RIDES</h1>
+      
+          <!-- card 9 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+            <div class="card" style ="width: 18rem; height: 450px;">
+              <img src="image/Bobsleds_05.jpg" class="card-img-top" alt="..." class="item family">
+              <div class="card-body">
+                <h5 class="card-title">FAMILY RIDES</h5>
+                <h5 class="card-title">BOBSLEDS</h5>
+                <p class="card-text">A Seabreeze favorite, the Bobsleds is designed with family fun in mind. Ride together and enjoy quirky turns, quick dips and fast fun!</p>
+                <a href="BOBSLEDS.HTML" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+              </div>
+            </div>
+            </div>
+      <!-- card 10 -->
+      
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+            
+              <div class="card" style="width: 18rem; height: 450px;">
+                <img src="image/Sea_Dragon_02.jpg" class="card-img-top" alt="..." class="item family">
+                <div class="card-body">
+                  <h5 class="card-title">FAMILY RIDES</h5>
+                  <h5 class="card-title">SEA DRAGON</h5>
+                  <p class="card-text">Hop on board the Viking ship and get ready for your voyage. Experience a thrilling ride as you swing back and forth, feeling your stomach do flip-flops!</p>
+                  <a href="SEA DRAGON.HTML" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                </div>
+              </div>
+              </div>
+            <!-- card 11 -->
+              
+                <div class="col-lg-4  col-md-6 col-sm-12 mt-5">
+                  <div class="card" style="width: 18rem; height: 450px;">
+                    <img src="image/Log_Flume_02.jpg" class="card-img-top" alt="..." class="item family">
+                    <div class="card-body">
+                      <h5 class="card-title">FAMILY RIDES</h5>
+                      <h5 class="card-title">LOG FLUME</h5>
+                      <p class="card-text">Experience a thrilling ride on the Log Flume, with the steepest drop of its kind in the country! You'll get wet - but it's totally worth it!</p>
+                      <a href="LOG FLUME.HTML" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                    </div>
+                  </div>
+                  </div>
+                <!-- card 12 -->
+                  
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                      <div class="card" style="width: 18rem; height: 450px;">
+                        <img src="image/Bumper_Cars_04.jpg" class="card-img-top" alt="..." class="item family">
+                        <div class="card-body">
+                          <h5 class="card-title">FAMILY RIDES</h5>
+                          <h5 class="card-title">BUMPER CARS</h5>
+                          <p class="card-text">An essential attraction for any amusement park. Get behind the wheel, go for a spin and get ready to bump into your buddy!</p>
+                          <a href="BUMPER CARS.HTML" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                        </div>
+                      </div>
+                      </div>
+              
+              
+            
+          <!-- card 13 -->
+                <div class="col-lg-4  col-md-6 col-sm-12 mt-5">
+                  <div class="card" style="width: 18rem; height: 450px;">
+                    <img src="image/Carousel_11.jpg" class="card-img-top" alt="..." class="item family">
+                    <div class="card-body">
+                      <h5 class="card-title">FAMILY RIDES</h5>
+                      <h5 class="card-title">CAROUSEL</h5>
+                      <p class="card-text">Make new memories with your family as you ride this classic wooden carousel with hand-carved horses. It's truly a revolving work of art!</p>
+                      <a href="CAROUSEL.HTML" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                  </div>
+</div>
+</div>
+<!-- card 14 -->
+                  <div class="col-lg-4  col-md-6 col-sm-12 mt-5">
+                    <div class="card" style="width: 18rem; height: 450px;">
+                      <img src="image/Great_Balloon_Race_02.jpg" class="card-img-top" alt="..." class="item family">
+                      <div class="card-body">
+                        <h5 class="card-title">FAMILY RIDES</h5>
+                        <h5 class="card-title">GREAT BALLOON RACE</h5>
+                        <p class="card-text">Take the family on a ballon ride! Moving in a circular motion, passengers will ascend to 30 feet off the ground.</p>
+                        <a href="GREAT BALLOON RACE.HTML" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                    </div>
+                  </div>
+                  </div>
+<!-- card 15 -->
+                    <div class="col-lg-4  col-md-6 col-sm-12 mt-5">
+                      <div class="card" style="width: 18rem; height: 450px;">
+                        <img src="image/The_Spring_01.jpg" class="card-img-top" alt="..." class="item family">
+                        <div class="card-body">
+                          <h5 class="card-title">FAMILY RIDES</h5>
+                          <h5 class="card-title">THE SPRING!</h5>
+                          <p class="card-text">Strap into your seat as the ride takes you up the 24-foot tower. Hang on for a second, then suddenly you're dropping towards the ground -- boing!</p>
+                          <a href="THE SPRING!.HTML" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                      </div>
+                    
+                </div>
+                </div>
+                
+
+<!-- card 16 -->
+                 
+                      <div class="col-lg-4  col-md-6 col-sm-12 mt-5">
+                        <div class="card" style="width: 18rem; height: 450px;">
+                          <img src="image/Tilt_A_Whirl_01.jpg" class="card-img-top" alt="..." class="item family">
+                          <div class="card-body">
+                            <h5 class="card-title">FAMILY RIDES</h5>
+                            <h5 class="card-title">TILT-A-WHIRL</h5>
+                            <p class="card-text">Hold on to your stomach - this whizzy, dizzy Tilt-A-Whirl has strong rotational forces. Grab your friends and hold on tight!</p>
+                            <a href="TILT-A-WHIRL.html" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                        </div>
+                        </div>
+                        </div>
+<!-- card 17 -->
+                        <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                          <div class="card" style="width: 18rem; height: 450px;">
+                            <img src="image/Twirlin_Tea_Cups_11.jpg" class="card-img-top" alt="..." class="item family">
+                            <div class="card-body">
+                              <h5 class="card-title">FAMILY RIDES</h5>
+                              <h5 class="card-title">TWIRLIN’ TEA CUPS</h5>
+                              <p class="card-text">Spin fast or go at your own pace, you control the Tea Cups. This family favorite ride has six colorful cups to ride in!</p>
+                              <a href="TWIRLIN’ TEA CUPS.html" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                          </div>
+                          </div>
+                          </div>
+<!-- card 18 -->
+                          <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                            <div class="card" style="width: 18rem; height: 450px;">
+                              <img src="image/Train_web_1.jpg" class="card-img-top" alt="..." class="item family">
+                              <div class="card-body">
+                                <h5 class="card-title">FAMILY RIDES</h5>
+                                <h5 class="card-title">TRAIN</h5>
+                                <p class="card-text">Sit back, relax, and enjoy the scenery aboard the Train. This gentle ride travels over and around the Log Flume pond.</p>
+                                <a href="TRAIN.html" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                            </div>
+                            </div>
+                            </div>
+                        
+                            <h1 id="kid" class="mt-5 rh" >KIDDIE RIDES</h1>
+<!-- card 19 -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                              <div class="card" style="width: 18rem; height: 450px;">
+                                <img src="image/Bear_Trax_01.jpg" class="card-img-top" alt="..."class="item kiddie">
+                                <div class="card-body">
+                                  <h5 class="card-title">KIDDIE RIDES</h5>
+                                  <h5 class="card-title">BEAR TRAX</h5>
+                                  <p class="card-text">A perfect junior coaster to introduce our younger guests to coaster thrills. With twists, turns and quick drops, riders reach a top speed of almost 17mph!</p>
+                                  <a href="BEAR TRAX.html" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                              </div>
+                              </div>
+                              </div>
+<!-- card 20 -->
+                              <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                                <div class="card" style="width: 18rem; height: 450px;">
+                                  <img src="image/Flying_Turtles_01.jpg" class="card-img-top" alt="..." class="item kiddie">
+                                  <div class="card-body">
+                                    <h5 class="card-title">KIDDIE RIDES</h5>
+                                    <h5 class="card-title">FLYING TURTLES</h5>
+                                    <p class="card-text">Grab your sunscreen and get ready to ride the waves on the Flying Turtles ride. It's a cowabunga dude adventure that will leave you smiling and laughing all day long!</p>
+                                    <a href="FLYING TURTLES.html" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                                </div>
+                                </div>
+                                </div>
+
+<!-- card 21 -->
+                                <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                                  <div class="card" style="width: 18rem; height: 450px;">
+                                    <img src="image/Barnstormers_01.jpg" class="card-img-top" alt="..." class="item kiddie">
+                                    <div class="card-body">
+                                      <h5 class="card-title">KIDDIE RIDES</h5>
+                                      <h5 class="card-title">BARNSTORMERS</h5>
+                                      <p class="card-text">Get ready to take to the skies in your very own bi-plane. As the pilot, you'll have full control over your aircraft as you soar through the air.</p>
+                                      <a href="BARNSTORMERS.html" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                                  </div>
+                                  </div>
+                                  </div>
+                           
+
+                     <!-- card 22          -->
+                                  <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                                    <div class="card" style="width: 18rem; height: 450px;">
+                                      <img src="image/Kiddie_Boats_01.jpg" class="card-img-top" alt="..." class="item kiddie">
+                                      <div class="card-body">
+                                        <h5 class="card-title">KIDDIE RIDES</h5>
+                                        <h5 class="card-title">KIDDIE BOATS</h5>
+                                        <p class="card-text">This ride is designed for our younger skippers. Its smooth circular motion allows you to enjoy the fun - without getting too dizzy!</p>
+                                        <a href="KIDDIE BOATS.html" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                                    </div>
+                                    </div>
+                                    </div>
+
+<!-- catrd 23 -->
+                                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                                      <div class="card" style="width: 18rem; height: 450px;">
+                                        <img src="image/Kiddie_Swings_01.jpg" class="card-img-top" alt="..." class="item kiddie">
+                                        <div class="card-body">
+                                          <h5 class="card-title">KIDDIE RIDES</h5>
+                                          <h5 class="card-title">KIDDIE SWINGS</h5>
+                                          <p class="card-text">The Kiddie Swings are fun and relaxing experience for young children, providing them with a safe and enjoyable ride that they can enjoy all by themselves.</p>
+                                          <a href="KIDDIE SWINGS.HTML" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                                      </div>
+                                      </div>
+                                      </div>
+<!-- card 24 -->
+                                      <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                                        <div class="card" style="width: 18rem; height: 450px;">
+                                          <img src="image/Star_Rockets_02.jpg" class="card-img-top" alt="..." class="item kiddie">
+                                          <div class="card-body">
+                                            <h5 class="card-title">KIDDIE RIDES</h5>
+                                            <h5 class="card-title">STAR ROCKETS</h5>
+                                            <p class="card-text">Blast into space aboard the Star Rockets. The ride's circular motion is gentle enough for young children, but exciting enough to make them feel like they're on a thrilling adventure.</p>
+                                            <a href="STAR ROCKETS.HTML" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                                        </div>
+                                        </div>
+                                        </div>
+                                  
+
+
+<!-- card 25 -->
+                                        <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                                          <div class="card" style="width: 18rem; height: 450px;">
+                                            <img src="image/T_Birds_04.jpg" class="card-img-top" alt="..." class="item kiddie">
+                                            <div class="card-body">
+                                              <h5 class="card-title">KIDDIE RIDES</h5>
+                                              <h5 class="card-title">T-BIRDS</h5>
+                                              <p class="card-text">Hit the road in style with a miniature 1955 Thunderbird. The cars come with two steering wheels that allow kids to ride alone - or with a friend!</p>
+                                              <a href="T-BIRDS.html" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                                          </div>
+                                          </div>
+                                          </div>
+       <h1 id="water" class="mt-5 rh" >WATER PARK</h1>
+      <!-- card 26 -->
+                                          <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                                            <div class="card" style="width: 18rem; height: 450px;">
+                                              <img src="image/Hydro_Racer_01.jpg" class="card-img-top" alt="..." class="item water">
+                                              <div class="card-body">
+                                                <h5 class="card-title">WATER PARK</h5>
+                                                <h5 class="card-title">HYDRO RACER</h5>
+                                                <p class="card-text">Are you ready for some racing thrills from start to finish? Hang on tight for the ultimate in high-speed, side-by-side racing experience.</p>
+                                                <a href="HYDRO RACER.html" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                                            </div>
+                                            </div>
+                                            </div>
+      <!-- card 27 -->
+                                            <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                                              <div class="card" style="width: 18rem; height: 450px;">
+                                                <img src="image/Lazy_River_09.jpg" class="card-img-top" alt="..." class="item water">
+                                                <div class="card-body">
+                                                  <h5 class="card-title">WATER PARK</h5>
+                                                  <h5 class="card-title">LAZY RIVER</h5>
+                                                  <p class="card-text">Catch some rays as you float down a 600 foot long slow-moving river. Watch out for the waterfalls!</p>
+                                                  <a href="LAZY RIVER.HTML" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                                              </div>
+                                              </div>
+                                              </div>
+                                        
+      
+      
+      <!-- card 28 -->
+                                              <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                                                <div class="card" style="width: 18rem; height: 450px;">
+                                                  <img src="image/The_Wave_01.jpg" class="card-img-top" alt="..." class="item water">
+                                                  <div class="card-body">
+                                                    <h5 class="card-title">WATER PARK</h5>
+                                                    <h5 class="card-title">THE WAVE</h5>
+                                                    <p class="card-text">"Big waves, no sand! With 260,000 gallons of water, the wave pool is the best place to cool down in the summer."</p>
+                                                    <a href="THE WAVE.html" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                                                </div>
+                                                </div>
+                                                </div>
+            
+            <!-- card 29 -->
+                                                <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                                                  <div class="card" style="width: 18rem; height: 450px;">
+                                                    <img src="image/Helix_02.jpg" class="card-img-top" alt="..." class="item water">
+                                                    <div class="card-body">
+                                                      <h5 class="card-title">WATER PARK</h5>
+                                                      <h5 class="card-title">HELIX</h5>
+                                                      <p class="card-text">Take a deep breath and hold on tight! You'll be twisting and spinning into a gigantic bowl to ride the powerful path of the Helix.</p>
+                                                      <a href="HELIX.HTML" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                                                  </div>
+                                                  </div>
+                                                  </div>
+            <!-- card 30 -->
+                                                  <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                                                    <div class="card" style="width: 18rem; height: 450px;">
+                                                      <img src="image/Vortex_01.jpg" class="card-img-top" alt="..." class="item water">
+                                                      <div class="card-body">
+                                                        <h5 class="card-title">WATER PARK</h5>
+                                                        <h5 class="card-title">VORTEX</h5>
+                                                        <p class="card-text">Its enclosed design allows riders to go through quick drops, tight turns and an awesome dark tunnel.</p>
+                                                        <a href="VORTEX.HTML" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                
+            
+                      <!-- card 31                         -->
+                                                    <div class="col-lg-4  col-md-6 col-sm-12 mt-5">
+                                                      <div class="card" style="width: 18rem; height: 450px;">
+                                                        <img src="image/Riptide_01.jpg" class="card-img-top" alt="..." class="item water">
+                                                        <div class="card-body">
+                                                          <h5 class="card-title">WATER PARK</h5>
+                                                          <h5 class="card-title">RIP TIDE TUBE SLIDE</h5>
+                                                          <p class="card-text">On this open slide, riders race down a series of quick turns and drops before splashing into a pool 4 feet deep.</p>
+                                                          <a href="RIP TIDE TUBE SLIDE.HTML" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                                                      </div>
+                                                      </div>
+                                                      </div>
+<!-- card 32 -->
+                                                      <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mb-5">
+                                                      <div class="card" style="width: 18rem; height: 450px;">
+                                                        <img src="image/Kiddie_Slides_01.jpg" class="card-img-top" alt="..." class="item water">
+                                                        <div class="card-body">
+                                                          <h5 class="card-title">WATER PARK</h5>
+                                                          <h5 class="card-title">KIDDIE SLIDES</h5>
+                                                          <p class="card-text">These slides are a perfect way for young kids to enjoy their water park experience.</p>
+                                                          <a href="KIDDIE SLIDES.HTML" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                                                      </div>
+                                                      </div>
+                                                      </div>
+<!-- card 33 -->
+                                                      <div class="col-lg-4  col-md-6 col-sm-12 mt-5 mb-5">
+                                                      <div class="card" style="width: 18rem; height: 450px;">
+                                                        <img src="image/Kiddie_Slides_01.jpg" class="card-img-top" alt="..." class="item water">
+                                                        <div class="card-body">
+                                                          <h5 class="card-title">WATER PARK</h5>
+                                                          <h5 class="card-title">SOAK ZONE</h5>
+                                                          <p class="card-text">In the Soak Zone, how wet you get is up to you! It's water fun for the whole family.</p>
+                                                          <a href="SOAK ZONE.HTML" class="btn btn-primary">VIEW ATTRACTION <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+                                                      </div>
+                                                      </div>
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                            
+            
+            
+                                                   <!-- footer -->
+<footer style="background-color:rgb(0, 74, 173) ; color:white ;">
+  <div class="container ">
+    <div class="row ">
+      <div class="col-lg-3 col-md-6 col-sm-12 mt-5"><img src="images/AMUSE-removebg-preview.png" alt="" height="200px" width="200px"></div>
+      <div class="col-lg-3 col-md-6 col-sm-12 mt-5 mb-5 " style="border-right: solid 2px white;">
+        <h3 class="foot1">contact us</h3>
+        <p >Email:MerciadoAmusementpark@gmail.com</p>
+        <p >Contact:+933456789</p>
+        <p >Address: <li>Seaview</li>
+        <li >DHA Ph IV</li>
+        <li>Hyderabad</li>
+        </p>
+      </div>
+      <div class="col-lg-2 col-md-5 col-sm-11 mt-5 mb-5 ms-4" style="list-style: none; border-right: solid 2px white;">
+      <ul style=" text-decoration:none">  <h3 class="foot1">links</h3></ul>
+        <li class="footp"  ><a  href="index.html" style="color: white; text-decoration: none;" >Home</a></li>
+        <li class="footp" ><a  href="attrac.html" style="color: white;text-decoration: none;" class="footp">Attractions</a></li>
+        <li  class="footp"><a href="restaurant.html" style="color: white;text-decoration: none;" class="footp">Restaurants</a></li>
+        <li  class="footp"><a href="entertainment.html" style="color: white;text-decoration: none;" class="footp">Entertainment</a</li>
+        <li class="footp"><a  href="ticket.html" style="color: white;text-decoration: none;"class="footp" >Tickets</a</li>
+        <li class="footp"><a  href="gallery.html" style="color: white;text-decoration: none;" class="footp">Gallery</a></li>
+        <li class="footp"><a href="index.html#ABOUT" style="color: white;text-decoration: none;" class="footp">About us</a></li>
+      </div>
+      <div class="col-lg-2 col-md-5 col-sm-11 mt-5 mb-5 ms-4" style="list-style: none;">
+        <h3 class="foot1">follow us</h3>
+       <a href="https://www.facebook.com/login/" target="_blank"> <li><i class="fa-brands fa-facebook footp" style="color: #edeff2;"></i></li></a>
+       <a href="https://twitter.com/login" target="_blank"><li><i class="fa-brands fa-twitter footp" style="color: #edeff2;"></i></li></a> 
+       <a href="https://web.whatsapp.com/" target="_blank"> <li><i class="fa-brands fa-whatsapp footp" style="color: #edeff2;"></i></li></a>
+        <a href="https://www.instagram.com/accounts/login/"  target="_blank"><li><i class="fa-brands fa-instagram footp" style="color: #edeff2;"></i></li></a>
+        <a href="sitemap.html"><button style="background-color: white; color:black; font-weight: bold; border-radius: 20px;font-family:'Chela One' ;font-size: 22px; width: 150px;">SITE MAP</button></a>
+      </div>
+    </div>
+  </div>
+
+<p style="background-color: #8a88f1;text-align: center;">&copy;All rights are reserved to Merciado Amusement Park .</p>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      
+
+</body>
+</html>
+</html>

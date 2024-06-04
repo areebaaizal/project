@@ -1,0 +1,461 @@
+.h{
+  
+ 
+  background-color:rgb(0, 74, 173) ;
+  color: white !important;
+  border-radius: 5px;
+  font-family: 'Alatsi';font-size: 21px;
+ font-size: 21px;
+  text-align: center;
+  width: 110px;
+}
+
+ .h:hover{
+background-color:white !important ;
+color:rgb(0, 74,173) !important;
+font-size: 23px;
+transition: background-color 0.5s;
+transition: font-size 0.3s;
+
+}
+html{
+  scroll-behavior: smooth;
+}
+.az{
+  color:white !important;
+    background-color: #FE7A36 !important;
+    border-radius: 5px;
+    font-family: 'Alatsi';font-size: 21px;
+    font-size: 21px;
+   
+    width: 140px;
+    text-align: center;
+}
+.az:hover{
+   background-color:white !important;
+  color: #FE7A36 !important;
+  font-size: 23px;
+  transition: background-color 0.5s;
+transition: font-size 0.3s;
+
+
+}
+.r{
+ color: white !important;
+  background-color: red;
+  border-radius: 5px;
+  font-family: 'Alatsi';font-size: 21px;
+  width: 130px;
+  text-align: center;
+  font-size: 21px;
+}
+.r:hover{
+   background-color:white !important;
+  color:red !important;
+  font-size: 23px;
+  transition: background-color 0.5s;
+  transition: font-size 0.3s;
+  
+  
+}
+.e{
+  color:white !important;
+  background-color:#34cbcb !important;
+  border-radius: 5px;
+  font-family: 'Alatsi';font-size: 21px;
+  width: 145px;
+  text-align: center;
+  font-size: 21px;
+}
+
+.e:hover{
+    background-color:white !important;
+    color:#34cbcb !important;
+    font-size: 23px;
+    transition: background-color 0.5s;
+transition: font-size 0.3s;
+
+}
+.t{
+  color:white !important;
+  background-color:  #FFC436!important;
+  border-radius: 5px;
+  font-family: 'Alatsi';font-size: 21px;
+  width: 120px;
+  text-align: center;
+  font-size: 21px;
+}
+.t:hover{
+  background-color:white !important;
+   color: #FFC436 !important;
+   font-size: 23px;
+   transition: background-color 0.5s;
+transition: font-size 0.3s;
+}
+.g{
+  color:white !important;
+  background-color: #61df95 !important;
+  border-radius: 5px;
+  font-family: 'Alatsi';font-size: 21px;
+  width: 120px;
+  text-align: center;
+  font-size: 21px;
+}
+.g:hover{
+  background-color:white !important;
+    color: #61df95 !important;
+    font-size: 23px;
+    transition: background-color 0.5s;
+transition: font-size 0.3s;
+
+}
+.a{
+  color:white !important;
+  background-color:#FA7070 !important;
+  border-radius: 5px;
+  font-family: 'Alatsi';font-size: 21px;
+  width: 120px;
+  text-align: center;
+  font-size: 21px;
+}
+.a:hover{
+   background-color:white !important;
+    color:#FA7070 !important;
+    font-size: 23px;
+    transition: background-color 0.5s;
+transition: font-size 0.3s;
+
+}
+.c{
+  color:white !important;
+    background-color: #5755FE !important;
+    border-radius: 5px;
+    font-family: 'Alatsi';font-size: 21px;
+    width: 130px;
+    text-align: center;
+    font-size: 21px;
+}
+.c:hover{
+   background-color:white !important;
+   color: #5755FE !important;
+   font-size: 23px;
+   transition: background-color 0.5s;
+transition: font-size 0.3s;
+
+}
+@media (min-width: 600px) {
+  .carousel-item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  .carousel-item {
+    width: 33.33%;
+  }
+}
+.carouselh1{
+  color: #db3c9a;
+  text-shadow:5px -2px #fff;
+  font-size: 50px; 
+   font-weight: bold;
+  font-family: 'Chela One';
+ 
+
+}
+.carouselh1:hover{
+  font-size:60px ;
+  transition: ease-in font-size 0.4s;
+
+}
+.carousel1p{
+  font-size: 50px;
+                font-family: monospace;
+                font-weight: 700;
+                color: #fff600f2;
+                text-shadow:  5px -2px #c92914f2;
+}
+.carousel1p:hover{
+  font-size: 60px;
+  transition: font-size ease-out 0.5s;
+}
+.carouselh2{
+  font-size: 90px;
+                color:#F4F27E ; font-weight: bolder;
+                font-family: 'Chela One';
+                text-shadow: 2px 4px rgb(101, 168, 180);
+}
+.carouselh2:hover{
+  font-size: 100px;
+  transition: font-size ease-out 0.5s;
+}
+.carouselh3{
+  font-size: 70px;
+                color:#FE7A36 ; font-weight: bolder;
+                text-shadow: 2px 4px rgb(31, 32, 32); font-family: 'Chela One';
+}
+.carouselh3:hover{
+  font-size: 80px;
+  transition: font-size ease-out 0.5s;
+}
+.amusement{
+  font-size: 90px;
+   color: rgb(0, 74, 173) ;
+    font-weight: bolder; 
+    font-family: 'Chela One';
+  }
+    @media screen and (min-width: 601px) {
+   .amusement {
+        font-size: 80px;
+      }
+    }
+    
+    /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+    @media screen and (max-width: 600px) {
+     .amusement {
+        font-size: 30px;
+      }
+    }
+
+.amusement:hover{
+  color:rgb(21, 95, 190) ;
+  font-size: 95px;
+  transition: font-size ease-out 0.5s;
+  transition: color ease-out 0.5s;
+}
+@media screen and (min-width: 601px) {
+  .amusement:hover {
+       font-size: 90px;
+     }
+   }
+   
+   /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+   @media screen and (max-width: 600px) {
+    .amusement:hover {
+       font-size: 40px;
+     }
+   }
+.am1:hover{
+color: grey;
+transition: color ease-out 0.5s;
+}
+.am2:hover{
+  color: grey;
+  transition: color ease-out 0.5s;
+  }
+  #open{
+    font-size: 50px;
+    text-align: center; 
+    color: rgb(0, 74, 173) ;
+     font-weight: bolder;
+     font-family: 'Chela One';
+  }
+  #open:hover{
+    color:rgb(21, 95, 190) ;
+    font-size: 60px;
+    transition: font-size ease-out 0.5s;
+    transition: color ease-out 0.5s;
+  }
+  .time:hover{
+    color: #e4e00d;
+    transition: color ease-out 0.5s;
+  }
+  .opn1:hover{
+  opacity: 0.9;
+  transition: opacity ease in 1s;
+  }
+ 
+.login{
+    width: 160px;
+  
+    border-radius: 30px;
+    border: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.13);
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+   font-weight: bold;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(to left,rgb(10, 97, 155),rgb(0, 132, 255));
+   
+  }
+  .login:hover{
+    width: 155px;
+   
+  }
+  .login:hover .arrow {
+    animation: slide-in-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+  }
+  
+  @keyframes slide-in-left {
+    0% {
+      transform: translateX(-10px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  
+  .login:active {
+    transform: scale(0.97);
+  }
+
+
+footer{
+    background-color: #5755FE;
+    color: white;
+   
+}
+.submitBtn {
+  width: 120px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.13);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 60;
+  font-size: auto;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(to left,rgb(230, 35, 0),rgb(255, 174, 0));
+  letter-spacing: 0.7px;
+}
+
+.submitBtn:hover .arrow {
+  animation: slide-in-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.submitBtn:active {
+  transform: scale(0.97);
+}
+.attr{
+  font-family: 'Chela One';
+
+}
+.attr:hover{
+ 
+    font-size: 60px;
+    transition: font-size ease-out 0.5s;
+   
+}
+.atrpic:hover{
+width:330px ;
+height: 330px;
+transition: width ease-in 0.5s;
+transition: height ease-in 0.5s;
+
+}
+.enter{
+  color: rgb(240, 246, 248); 
+  text-align: center;
+   font-size: 60px;
+    text-shadow: 1PX 2PX black;
+    font-family: 'Chela One';
+}
+@media screen and (min-width: 601px) {
+  .enter {
+       font-size: 80px;
+     }
+   }
+   
+   /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+   @media screen and (max-width: 600px) {
+    .enter {
+       font-size: 30px;
+     }
+   }
+
+
+.enter:hover{
+
+  font-size: 65px;
+  transition: font-size ease-out 0.5s;
+}
+.enter2{
+  text-align: center;
+          
+        color:white;
+       font-size: 40px;
+        text-shadow: 1PX 2PX black; font-family: 'Chela One';
+}
+.enter2:hover{
+  font-size:45px ;
+  transition: ease-in font-size 0.5s;
+}
+.entercard:hover{
+opacity: 0.7;
+
+transition: opacity ease-in 0.2s;
+}
+.abouth1{
+  background-color: #FA7070;
+   font-family: 'Chela One';
+   color: white; 
+   text-shadow: 2px 2px black;
+}
+.abouth1:hover{
+  font-size: 50px;
+  transition: font-size ease-in 0.5s;
+}
+.abouth2:hover{
+  font-size: 35px;
+  transition: font-size ease-in 0.5s;
+}
+.fac:hover{
+  font-size: 50px;
+  transition: font-size ease-in 0.5s;
+}
+.fac2{
+  font-family:  'Chela One';
+}
+.fac2:hover{
+  font-size: 30px;
+  transition: font-size ease-in 0.5s;
+}
+.facdiv:hover{
+  opacity: 0.7;
+
+transition: opacity ease-in 0.2s;
+}
+.iconfac:hover{
+  height: 23px;
+  width: 20px;
+  transition: height ease-in 0.2s;
+  transition: width ease-in 0.2s;
+}
+.foot1{
+  font-family:  'Chela One';
+}
+.foot1:hover{
+  font-size: 30px;
+  transition: font-size ease-in 0.5s;
+}
+.footp:hover{
+color: #FFC436;
+transition: ease-incolr 0.2s;
+}
+.zoneh1:hover{
+  font-size: 50px;
+  transition: ease-in font-size 0.5s;
+}

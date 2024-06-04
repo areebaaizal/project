@@ -1,0 +1,90 @@
+/*ticket*/
+ body{
+    background-color:  rgb(247, 202, 209);
+ }
+ h3 {
+    text-align: center;
+    margin: 20px auto;
+    font-size: larger;
+    font-weight: bold;
+  }
+  form {
+    width: 70%;
+    margin: auto;
+  }
+  div.fieldset {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 0 5px #333;
+    background-color: #FFC436;
+  }
+  label {
+    display: block;
+    
+    margin-bottom: 5px;
+  }
+  input[type="text"],input[type="email"],select{
+    width: calc(100% - 20px);
+    height: 20px;
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  input[type="date"],input[type="email"],select{
+    width: calc(100% - 20px);
+    height: 20px;
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  input[type="time"],input[type="email"],select{
+    width: calc(100% - 20px);
+    height: 20px;
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+ 
+  
+  .submitBtn {
+    width: 120px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.13);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(to left,rgb(233, 202, 44),rgb(185, 143, 5));
+    letter-spacing: 0.7px;
+  }
+  
+  .submitBtn:hover .arrow {
+    animation: slide-in-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  
+  @keyframes slide-in-left {
+    0% {
+      transform: translateX(-10px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  
+  .submitBtn:active {
+    transform: scale(0.97);
+  }
+  
